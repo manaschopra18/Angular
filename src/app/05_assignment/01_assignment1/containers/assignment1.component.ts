@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-assignment1',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./assignment1.component.css']
 })
 export class Assignment1Component {
+  info: String;
 
+  @Output()
+  onInput(info: string) {
+    this.info = info;
+  }
 }

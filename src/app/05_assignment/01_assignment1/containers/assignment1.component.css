@@ -1,4 +1,6 @@
 .your-code {
   margin-top: 40px;
   border: 2px solid darkmagenta;
+  display: flex;
+  flex-wrap: wrap;
 }

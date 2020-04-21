@@ -8,6 +8,17 @@
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+    <h5 class="col-12 mt-3 mb-3">Assignment 1 - Solution </h5>
+    <!-- template reference variable -->
+        <h5 class="col-sm-2 pt-2">Input :</h5> 
+        <input type="text"
+          class="form-control col-sm-10"
+          id="textinput"
+          placeholder="Enter information here..."
+          #inputEle
+          (input)="onInput(inputEle.value)">
+      
+        <h5 class="col-12 mt-3"> Entered Text is : {{ info }}</h5>
+
   </div>
 </div>
